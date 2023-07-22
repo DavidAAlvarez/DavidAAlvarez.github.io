@@ -1,0 +1,19 @@
+.nav-link {
+  color: white;
+}
+.td {
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
+.card-header {
+  background-color: rgb(20, 94, 230);
+}
+#bus {
+  border-color: blue;
+  border-radius: 1%;
+  border-style: dotted;
+  background-color: rgb(86, 153, 253);
+}
+.img {
+  object-fit: cover;
+}
