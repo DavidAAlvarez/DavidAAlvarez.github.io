@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl} from '@angular/forms';
 
 @Component({
   standalone: false,
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./venta-boletos.component.css'],
 })
 export class VentaBoletosComponent {
-  public date = new Date();
+  panelColor = new FormControl('red');
 }

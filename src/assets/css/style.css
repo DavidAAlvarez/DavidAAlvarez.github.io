@@ -6,7 +6,7 @@
     padding-bottom: 0%;
   }
 .card-header {
-  background-color: rgb(20, 94, 230);
+  background-color: rgb(1, 59, 165);
 }
 #bus {
   border-color: blue;
@@ -16,4 +16,29 @@
 }
 .img {
   object-fit: cover;
+}
+
+.navbar {
+  background-color: rgb(1, 59, 165);
+}
+
+#form-ruta {
+  background-color: rgb(1, 59, 165);
+}
+
+
+.mat-form-field .my-form-field .mat-form-field-wrapper {
+  margin-bottom: -1.25em;
+}
+
+.example-panel-red.mat-mdc-select-panel {
+  background: rgb(255, 255, 255);
+}
+
+.example-panel-green.mat-mdc-select-panel {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.example-panel-blue.mat-mdc-select-panel {
+  background: rgba(0, 0, 255, 0.5);
 }

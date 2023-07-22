@@ -1,6 +1,7 @@
-<mat-form-field color="accent">
-    <mat-label>Inherited calendar color</mat-label>
-    <input matInput [matDatepicker]="picker1">
-    <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
-    <mat-datepicker #picker1></mat-datepicker>
+<mat-form-field class="my-form-field" style="margin-bottom: -1.25em">
+    <mat-label>Selecciona fecha</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <!--mat-hint>MM/DD/YYYY</mat-hint-->
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker touchUi #picker></mat-datepicker>
   </mat-form-field>

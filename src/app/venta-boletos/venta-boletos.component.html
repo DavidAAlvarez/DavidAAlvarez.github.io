@@ -1,39 +1,40 @@
 
 <div class="container-fluid p-4">
-    <div class="row mb-4">
-        <app-carousel></app-carousel>
-    </div>
-    <div class="row d-flex justify-content-around mb-4" style="background-color: blue;">
+    <div class="row d-flex justify-content-around mb-4" id="form-ruta">
         <form class="row p-4">
-            <div class="col-md-2" cFormFloating>
-                <select cSelect id="floatingSelect">
-                  <option>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <label cLabel for="floatingSelect">Origen</label>
+            <div class="col-md-2">
+              <mat-form-field style="margin-bottom: -1.25em">
+                <mat-label>Panel color</mat-label>
+                <mat-select [formControl]="panelColor"
+                            panelClass="example-panel-{{panelColor.value}}">
+                  <mat-option value="red">Red</mat-option>
+                  <mat-option value="green">Green</mat-option>
+                  <mat-option value="blue">Blue</mat-option>
+                </mat-select>
+              </mat-form-field>
             </div>
             <div class="col-md-1 text-center h-100">
                 <i class="fa-solid fa-route fa-3x fa-fade" style="--fa-animation-duration: 1s; --fa-fade-opacity: 0.6; color: white;"></i>
             </div>
-            <div class="col-md-2" cFormFloating>
-                <select cSelect id="floatingSelect">
-                  <option>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <label cLabel for="floatingSelect">Destino</label>
+            <div class="col-md-2" >
+              <mat-form-field style="margin-bottom: -1.25em">
+                <mat-label>Panel color</mat-label>
+                <mat-select [formControl]="panelColor"
+                            panelClass="example-panel-{{panelColor.value}}">
+                  <mat-option value="red">Red</mat-option>
+                  <mat-option value="green">Green</mat-option>
+                  <mat-option value="blue">Blue</mat-option>
+                </mat-select>
+              </mat-form-field>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <app-datepicker></app-datepicker>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <app-datepicker></app-datepicker>
             </div>
-            <div class="col-md-1">
-              <button type="submit" class="btn btn-primary h-100">Buscar</button>
+            <div class="col-md-1 text-center">
+              <button type="submit"  routerLink="/rutas" class="btn btn-primary h-100">Buscar</button>
             </div>
           </form>
     </div>
@@ -79,17 +80,7 @@
             </div>
           </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
-        <div class="col">
-          <div class="card">
-            <img src="/assets/images/ban2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-light">Visitar</a>
-            </div>
-          </div>
-        </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
         <div class="col">
           <div class="card">
             <img src="/assets/images/ban1.jpg" class="card-img-top" alt="...">
@@ -121,190 +112,5 @@
           </div>
         </div>
       </div>
-    <div class="row">
-        <div class="col-md-8 m-0">
-            <div class="row m-0 mb-4 d-flex justify-content-around">
-                <div class="col-md-2"><i class="fa-solid fa-city"></i> Salidas</div>
-                <div class="col-md-2"><i class="fa-solid fa-person-seat"></i> Asientos</div>
-                <div class="col-md-2"><i class="fa-solid fa-person"></i> Pasajero</div>
-                <div class="col-md-2"><i class="fa-solid fa-ticket"></i> Pago</div>
-                <div class="col-md-3"><i class="fa-solid fa-shield-check"></i> Confirmacion</div>
-                    
-            </div>
-            <div class="row m-0 mb-4">
-                <div class="card border-primary p-0">
-                    <h5 class="card-header text-white">Tuxtla <i class="fa-solid fa-route fa-2x" style="color:blue"></i> Tapachula</h5>
-                    <div class="card-body">
-                    <div class="col-2 d-flex justify-content-around">
-                        <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
-                    </div>
-                    <p class="card-text">17:00 horas | Tuxtla</p>
-                    <p class="card-text">17:00 horas | Tapachula</p>
-                    <div class="row d-flex justify-content-around">
-                        <div class="col-md-6 d-flex justify-content-around">
-                            <i class="fa-solid fa-person-seat fa-2x"></i> 
-                            <i class="fa-solid fa-person-seat-reclined fa-2x"></i> 
-                            <i class="fa-solid fa-mug-hot fa-2x"></i> 
-                            <i class="fa-solid fa-ticket fa-2x"></i> 
-                            <i class="fa-solid fa-route fa-2x"></i> 
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <a href="#" class="btn btn-primary">Total $400.00</a>
-                        </div>
-                    </div>
-                    </div> 
-                </div>
-            </div>
-            <div class="row m-0 mb-4">
-                <div class="card border-primary p-0">
-                    <h5 class="card-header text-white">Tuxtla <i class="fa-solid fa-route fa-2x" style="color:blue"></i> Tapachula</h5>
-                    <div class="card-body">
-                    <div class="col-2 d-flex justify-content-around">
-                        <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
-                    </div>
-                    <p class="card-text">17:00 horas | Tuxtla</p>
-                    <p class="card-text">17:00 horas | Tapachula</p>
-                    <div class="row d-flex justify-content-around">
-                        <div class="col-md-6 d-flex justify-content-around">
-                            <i class="fa-solid fa-person-seat fa-2x"></i> 
-                            <i class="fa-solid fa-person-seat-reclined fa-2x"></i> 
-                            <i class="fa-solid fa-mug-hot fa-2x"></i> 
-                            <i class="fa-solid fa-ticket fa-2x"></i> 
-                            <i class="fa-solid fa-route fa-2x"></i> 
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <a href="#" class="btn btn-primary">Total $400.00</a>
-                        </div>
-                    </div>
-                    </div> 
-                </div>
-            </div>
-            <div class="row m-0 mb-4">
-                <div class="card border-primary p-0">
-                    <h5 class="card-header text-white">Tuxtla <i class="fa-solid fa-route fa-2x" style="color:blue"></i> Tapachula</h5>
-                    <div class="card-body">
-                    <div class="col-2 d-flex justify-content-around">
-                        <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
-                    </div>
-                    <p class="card-text">17:00 horas | Tuxtla</p>
-                    <p class="card-text">17:00 horas | Tapachula</p>
-                    <div class="row d-flex justify-content-around">
-                        <div class="col-md-6 d-flex justify-content-around">
-                            <i class="fa-solid fa-person-seat fa-2x"></i> 
-                            <i class="fa-solid fa-person-seat-reclined fa-2x"></i> 
-                            <i class="fa-solid fa-mug-hot fa-2x"></i> 
-                            <i class="fa-solid fa-ticket fa-2x"></i> 
-                            <i class="fa-solid fa-route fa-2x"></i> 
-                        </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <a href="#" class="btn btn-primary">Total $400.00</a>
-                        </div>
-                    </div>
-                    </div> 
-                </div>
-            </div>
-            <div class="row m-0 mb-4 d-flex justify-content-around">
-                <div class="col-md-2"><i class="fa-solid fa-city"></i> Salidas</div>
-                <div class="col-md-2"><i class="fa-solid fa-person-seat"></i> Asientos</div>
-                <div class="col-md-2"><i class="fa-solid fa-person"></i> Pasajero</div>
-                <div class="col-md-2"><i class="fa-solid fa-ticket"></i> Pago</div>
-                <div class="col-md-3"><i class="fa-solid fa-shield-check"></i> Confirmacion</div>
-                    
-            </div>
-            <div id="bus" class="row m-0 mt-4 p-4">
-                <table class="table-sm">
-                    <tbody>
-                        <tr class="text-center">
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">37</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">33</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">29</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">21</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">13</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">05</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">01</span></td>
-                            <td><i class="fa-solid fa-person-seat fa-3x"></i></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">38</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">34</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">26</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">18</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">14</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">10</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">06</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">02</span></td>
-                            <td></td>
-                        </tr>
-                        <tr><td><br></td></tr>
-                        <tr class="text-center">
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">39</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">35</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">23</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">19</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">11</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">07</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x fa-beat" style="color:green"></i><span class="badge text-bg-danger">03</span></td>
-                            <td></td>
-                        </tr>
-                        <tr class="text-center">
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">40</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">32</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">24</span></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-person-seat-reclined fa-3x"></i></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x" style="color:blue"></i><span class="badge text-bg-danger">08</span></td>
-                            <td><i class="fa-duotone fa-seat-airline fa-3x fa-beat" style="color:green"></i><span class="badge text-bg-danger">04</span></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td> <i class="fa-solid fa-compact-disc fa-spin fa-3x"></i></td>
-                            <td> <i class="fa-solid fa-compact-disc fa-spin fa-3x"></i></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td> <i class="fa-solid fa-compact-disc fa-spin fa-3x"></i></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-md-4 m-0">
-            <div class="card border-primary mb-3">
-                <div class="card-header text-white border-primary"><h5 class="card-title">Informacion</h5></div>
-                <div class="card-body text-dark">
-                  <h5 class="card-title">Viaje</h5>
-                  <p class="card-text">Ruta <br> TUX - TAP <br> 17:00 - 05:00 <br> Jueves 27 Julio 2023</p>
-                  <h5 class="card-title">Pasajeros</h5>
-                  <p class="card-text">Hugo David Aguilar</p>
-                  <h5 class="card-title">Costo</h5>
-                  <p class="card-text">Tarifa - $450.00 <br> Descuento - $50</p>
-                  <h5 class="card-title">Servicio Extra</h5>
-                  <p class="card-text">Equipaje - Mano 15kg <br> Equipaje Extra - 25kg</p>
-                  
-                  <h5 class="card-title">Terminos y condiciones</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="card-footer bg-transparent border-primary">
-                  <h5 class="card-title">Total</h5>
-                  <p class="card-text">$400.00</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
     
