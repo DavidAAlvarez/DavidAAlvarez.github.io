@@ -3,8 +3,8 @@
         <img width="100" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/>
         <a class="navbar-brand" href="#">App</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -27,5 +27,13 @@
                 </li>
             </ul>
         </div>
+        <mat-form-field style="margin-bottom: -1.25em">
+            <mat-label>Destino</mat-label>
+            <mat-select (change)="onChange($event)">
+              <mat-option value="red">Rojo</mat-option>
+              <mat-option value="green">Verde</mat-option>
+              <mat-option value="blue">Blue</mat-option>
+            </mat-select>
+          </mat-form-field>
     </div>
 </nav>

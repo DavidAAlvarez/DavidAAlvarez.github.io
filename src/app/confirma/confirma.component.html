@@ -1,0 +1,50 @@
+<div class="container-fluid p-4">
+    
+    <div class="row d-flex justify-content-center m-0 mt-4">
+        
+        <div class="row m-0 mb-4 d-flex justify-content-between text-center">
+            <div class="col-md-2"><i class="fa-solid fa-city"></i> Rutas</div>
+            <div class="col-md-2"><i class="fa-solid fa-person"></i> Pasajero</div>
+            <div class="col-md-2"><i class="fa-solid fa-person-seat"></i> Asientos</div>
+            <div class="col-md-2"><i class="fa-solid fa-ticket"></i> Pago</div>
+            <div class="col-md-3"><i class="fa-solid fa-shield-check"></i> Confirmacion</div>
+        </div>
+        <div class="row m-0 p-4">
+            <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+        </div>
+        <div class="row d-flex justify-content-around m-0 mt-4">            
+            <div class="col-md-10 m-0">
+                <div class="card border-primary mb-3">
+                    <div class="card-header text-white border-primary"><h5 class="card-title">Informacion</h5></div>
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Viaje</h5>
+                        <p class="card-text">Ruta <br> TUX - TAP <br> 17:00 - 05:00 <br> Jueves 27 Julio 2023</p>
+                        <h5 class="card-title">Pasajeros</h5>
+                        <p class="card-text">Hugo David Aguilar</p>
+                        <h5 class="card-title">Costo</h5>
+                        <p class="card-text">Tarifa - $450.00 <br> Descuento - $50</p>
+                        <h5 class="card-title">Servicio Extra</h5>
+                        <p class="card-text">Equipaje - Mano 15kg <br> Equipaje Extra - 25kg</p>
+                        
+                        <h5 class="card-title">Terminos y condiciones</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-primary">
+                        <h5 class="card-title">Total</h5>
+                        <p class="card-text">$400.00</p>
+                    </div>
+                </div>
+                <div class="form-check form-switch mb-4">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Acepto los terminos y condiciones de compra</label>
+                </div>              
+                <div class="row d-flex justify-content-around mb-4">
+                    <div class="col-md-12 d-flex justify-content-start">
+                        <a routerLink="/confirma" class="btn btn-primary">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
