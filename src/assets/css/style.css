@@ -1,15 +1,11 @@
-.nav-link {
-  color: white;
-}
-
 .td {
     padding-top: 0%;
     padding-bottom: 0%;
   }
 
-.card-header {
+/*.card-header {
   background-color: blue;
-}
+}*/
 
 #bus {
   border-color: blue;
@@ -22,8 +18,28 @@
   object-fit: cover;
 }
 
-.navbar {
-  background-color: blue;
+.app-basic {
+  background-color: rgb(38, 132, 187);
+}
+
+.app-titan {
+  background-color: black;  
+}
+
+.app-aexa {
+  background-color: blue;  
+}
+
+.app-avisa {
+  background-color: green;  
+}
+
+.app-occ {
+  background-color: red;  
+}
+
+.nav-link {
+  color: white;
 }
 
 #form-ruta {
@@ -34,14 +50,18 @@
   margin-bottom: -1.25em;
 }
 
-.example-panel-red.mat-mdc-select-panel {
-  background: rgb(255, 255, 255);
+/*.example-panel-occ.mat-mdc-select-panel {
+  background: rgb(255, 0, 0);
 }
 
-.example-panel-green.mat-mdc-select-panel {
+.example-panel-avisa.mat-mdc-select-panel {
   background: rgba(0, 255, 0, 0.5);
 }
 
-.example-panel-blue.mat-mdc-select-panel {
+.example-panel-aexa.mat-mdc-select-panel {
   background: rgba(0, 0, 255, 0.5);
 }
+.example-panel-titan.mat-mdc-select-panel {
+  background: rgb(0, 0, 0);
+}
+*/

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-pago',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class PagoComponent {
   visible1 = false;
+  
+  colorapp = AppComponent.colorapp;
 
   constructor() { }
 

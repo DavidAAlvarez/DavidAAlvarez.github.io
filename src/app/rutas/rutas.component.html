@@ -12,22 +12,36 @@
                 <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
             <div class="row m-0 mt-4">
                 <div class="card border-primary p-0">
-                    <h5 class="card-header text-white">Tuxtla <i class="fa-solid fa-route fa-2x" style="color:blue"></i> Tapachula</h5>
-                    <div class="card-body">
-                    <div class="col-2 d-flex justify-content-around">
-                        <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
+                    <div class="card-header text-white border-primary app-{{colorapp}}">
+                        <!--h5 class="card-header text-white p-0">
+                            Tuxtla <i class="fa-solid fa-route fa-2x"></i> Tapachula
+                        </h5-->
                     </div>
-                    <p class="card-text">17:00 horas | Tuxtla</p>
-                    <p class="card-text">17:00 horas | Tapachula</p>
-                    <div class="row d-flex justify-content-around">
-                        <div class="col-md-6 d-flex justify-content-around">
-                            <i class="fa-solid fa-person-seat fa-2x"></i> 
-                            <i class="fa-solid fa-person-seat-reclined fa-2x"></i> 
-                            <i class="fa-solid fa-mug-hot fa-2x"></i> 
-                            <i class="fa-solid fa-ticket fa-2x"></i> 
-                            <i class="fa-solid fa-route fa-2x"></i> 
+                    <div class="card-body">
+                    <div class="col-md-12 d-flex justify-content-around">
+                        <div class="col-md-2"><img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/></div>
+                        <div class="col-md-10"><p class="card-text">Salida 17:00 horas | Tuxtla <i class="fa-solid fa-route fa-1x"></i> Llegada 17:00 horas | Tapachula</p></div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-md-2 d-flex justify-content-between align-self-center">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <a (click)="toggleCollapse(1)" cButton class="me-1" color="primary">
+                                <i class="fa-duotone fa-play"></i>
+                            </a>
                         </div>
-                        <div class="col-md-6 d-flex justify-content-end">
+                        <div class="col-md-5 align-self-center">
+                            <div [visible]="visible1" cCollapse class="col-md-12 align-self-center">
+                                <div class="col-md-12 d-flex justify-content-around">
+                                    <i class="fa-solid fa-person-seat fa-1x"></i> 
+                                    <i class="fa-solid fa-person-seat-reclined fa-1x"></i> 
+                                    <i class="fa-solid fa-mug-hot fa-1x"></i>
+                                    <i class="fa-solid fa-ticket fa-1x"></i>
+                                    <i class="fa-solid fa-route fa-1x"></i>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-end">
                             <a routerLink="/pasajeros" class="btn btn-primary">Total $400.00</a>
                         </div>
                     </div>
@@ -36,23 +50,38 @@
             </div>
             <div class="row m-0 mt-4">
                 <div class="card border-primary p-0">
-                    <h5 class="card-header text-white">Tuxtla <i class="fa-solid fa-route fa-2x" style="color:blue"></i> Tapachula</h5>
-                    <div class="card-body">
-                    <div class="col-2 d-flex justify-content-around">
-                        <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
+                    <div class="card-header text-white border-primary app-{{colorapp}}">
+                        <!--h5 class="card-header text-white p-0">
+                            Tuxtla <i class="fa-solid fa-route fa-2x"></i> Tapachula
+                        </h5-->
                     </div>
-                    <p class="card-text">17:00 horas | Tuxtla</p>
-                    <p class="card-text">17:00 horas | Tapachula</p>
+                    <div class="card-body">
+                    <div class="col-md-12 d-flex justify-content-around">
+                        <div class="col-md-2"><img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/></div>
+                        <div class="col-md-10"><p class="card-text">Salida 17:00 horas | Tuxtla <i class="fa-solid fa-route fa-1x"></i> Llegada 17:00 horas | Tapachula</p></div>
+                    </div>
                     <div class="row d-flex justify-content-around">
-                        <div class="col-md-6 d-flex justify-content-around">
-                            <i class="fa-solid fa-person-seat fa-2x"></i> 
-                            <i class="fa-solid fa-person-seat-reclined fa-2x"></i> 
-                            <i class="fa-solid fa-mug-hot fa-2x"></i> 
-                            <i class="fa-solid fa-ticket fa-2x"></i> 
-                            <i class="fa-solid fa-route fa-2x"></i> 
+                        <div class="col-md-2 d-flex justify-content-between align-self-center">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <a (click)="toggleCollapse(1)" cButton class="me-1" color="primary">
+                                <i class="fa-duotone fa-play"></i>
+                            </a>
                         </div>
-                        <div class="col-md-6 d-flex justify-content-end">
-                            <a routerLink="/pasajeros" class="btn btn-primary">Total $400.00</a>
+                        <div class="col-md-5 align-self-center">
+                            <div [visible]="visible1" cCollapse class="col-md-12 align-self-center">
+                                <div class="col-md-12 d-flex justify-content-around">
+                                    <i class="fa-solid fa-person-seat fa-1x"></i> 
+                                    <i class="fa-solid fa-person-seat-reclined fa-1x"></i> 
+                                    <i class="fa-solid fa-mug-hot fa-1x"></i> 
+                                    <i class="fa-solid fa-ticket fa-1x"></i> 
+                                    <i class="fa-solid fa-route fa-1x"></i> 
+                                </div>
+    
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-5 d-flex justify-content-end">
+                            <a routerLink="/pasajeros" class="btn btn-primary">Total $600.00</a>
                         </div>
                     </div>
                     </div> 
@@ -61,16 +90,13 @@
         </div>
         <div class="col-md-4 m-0">
             <div class="card border-primary mb-3">
-            <div class="card-header text-white border-primary"><h5 class="card-title">Informacion</h5></div>
+            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title">Informacion</h5></div>
             <div class="card-body text-dark">
                 <h5 class="card-title">Viaje</h5>
-                <p class="card-text">Ruta <br> TUX - TAP <br> 17:00 - 05:00 <br> Jueves 27 Julio 2023</p>
+                <p class="card-text">Ruta <br> TUX - TAP <br> Jueves 27 Julio 2023</p>
                 <h5 class="card-title">Pasajeros</h5>
-                <p class="card-text">Hugo David Aguilar</p>
                 <h5 class="card-title">Costo</h5>
-                <p class="card-text">Tarifa - $450.00 <br> Descuento - $50</p>
                 <h5 class="card-title">Servicio Extra</h5>
-                <p class="card-text">Equipaje - Mano 15kg <br> Equipaje Extra - 25kg</p>
                 
                 <h5 class="card-title">Terminos y condiciones</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

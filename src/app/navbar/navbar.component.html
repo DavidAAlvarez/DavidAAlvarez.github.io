@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg fixed-top app-{{colorapp}}" data-bs-theme="dark">
     <div class="container-fluid">
         <img width="100" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/>
         <a class="navbar-brand" href="#">App</a>
@@ -28,11 +28,12 @@
             </ul>
         </div>
         <mat-form-field style="margin-bottom: -1.25em">
-            <mat-label>Destino</mat-label>
-            <mat-select (change)="onChange($event)">
-              <mat-option value="red">Rojo</mat-option>
-              <mat-option value="green">Verde</mat-option>
-              <mat-option value="blue">Blue</mat-option>
+            <mat-label>Empresa</mat-label>
+            <mat-select (selectionChange)="changeFn($event.value)" panelClass="example-panel-{{colorapp}}">
+              <mat-option value="titan">T</mat-option>
+              <mat-option value="aexa">X</mat-option>
+              <mat-option value="avisa">A</mat-option>
+              <mat-option value="occ">O</mat-option>
             </mat-select>
           </mat-form-field>
     </div>

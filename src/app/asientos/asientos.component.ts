@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-asientos',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./asientos.component.css']
 })
 export class AsientosComponent {
+  colorapp = AppComponent.colorapp;
 
 }

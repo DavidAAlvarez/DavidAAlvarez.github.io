@@ -14,7 +14,7 @@
                 <div class="row d-flex justify-content-around m-0 mt-4">
                     <div class="col-md-3">
                         <div class="card border-primary p-0">
-                            <h5 class="card-header text-white"></h5>
+                            <h5 class="card-header text-white app-{{colorapp}}"></h5>
                             <div class="card-body">
                             <div class="col-12 text-center">
                                 <a (click)="toggleCollapse()" cButton class="me-1" color="primary"><h5 class="card-title">Efectivo</h5></a>
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card border-primary p-0">
-                            <h5 class="card-header text-white"></h5>
+                            <h5 class="card-header text-white app-{{colorapp}}"></h5>
                             <div class="card-body">
                             <div class="col-12 text-center">
                                 <a (click)="toggleCollapse()" cButton class="me-1" color="primary"><h5 class="card-title">Tarjeta de debito</h5></a>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card border-primary p-0">
-                            <h5 class="card-header text-white"></h5>
+                            <h5 class="card-header text-white app-{{colorapp}}"></h5>
                             <div class="card-body">
                             <div class="col-12 text-center">
                                 <a (click)="toggleCollapse()" cButton class="me-1" color="primary"><h5 class="card-title">Tarjeta de Credito</h5></a>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="card border-primary p-0">
-                            <h5 class="card-header text-white"></h5>
+                            <h5 class="card-header text-white app-{{colorapp}}"></h5>
                             <div class="card-body">
                             <div class="col-12 text-center">
                                 <a (click)="toggleCollapse()" cButton class="me-1" color="primary"><h5 class="card-title">OXXO</h5></a>
@@ -76,7 +76,7 @@
                 <div class="row m-0 mt-4 d-flex justify-content-center">
                     <div [visible]="visible1" cCollapse class="col-md-10">
                             <div class="card border-primary p-0">
-                                <h5 class="card-header text-white">Datos de Pago</h5>
+                                <h5 class="card-header text-white app-{{colorapp}}">Datos de Pago</h5>
                                 <div class="card-body">
                                     <form>
                                         <div class="form-row mb-4">
@@ -136,7 +136,7 @@
         </div>
         <div class="col-md-4 m-0">
             <div class="card border-primary mb-3">
-            <div class="card-header text-white border-primary"><h5 class="card-title">Informacion</h5></div>
+            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title">Informacion</h5></div>
             <div class="card-body text-dark">
                 <h5 class="card-title">Viaje</h5>
                 <p class="card-text">Ruta <br> TUX - TAP <br> 17:00 - 05:00 <br> Jueves 27 Julio 2023</p>

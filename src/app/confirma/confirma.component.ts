@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-confirma',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./confirma.component.css']
 })
 export class ConfirmaComponent {
-
+  
+  colorapp = AppComponent.colorapp;
 }
