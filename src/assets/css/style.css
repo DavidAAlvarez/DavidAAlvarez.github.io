@@ -1,3 +1,4 @@
+.container-fluid {margin-top: 60px;}
 .td {
     padding-top: 0%;
     padding-bottom: 0%;
@@ -36,6 +37,26 @@
 
 .app-occ {
   background-color: red;  
+}
+
+.border-basic {
+  border-color: rgb(38, 132, 187);
+}
+
+.border-titan {
+  border-color: black;  
+}
+
+.border-aexa {
+  border-color: blue;  
+}
+
+.border-avisa {
+  border-color: green;  
+}
+
+.border-occ {
+  border-color: red;  
 }
 
 .nav-link {

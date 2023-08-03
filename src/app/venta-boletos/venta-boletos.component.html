@@ -1,6 +1,6 @@
 
-<div class="container-fluid p-4">
-    <div class="row d-flex justify-content-around mb-4 app-{{colorapp}}">
+<app-carousel></app-carousel>
+    <div class="row d-flex justify-content-around mb-4 mt-4 app-{{colorapp}}">
         <form class="p-4">
           <div class="row m-0 mb-4">
             <div class="col-md-5 d-flex justify-content-between">
@@ -39,7 +39,7 @@
 
               <mat-form-field class="my-form-field w-auto" style="margin-bottom: -1.25em">
                 <mat-label>Fecha Regreso</mat-label>
-                <input matInput [matDatepicker]="picker2">
+                <input matInput [matDatepicker]="picker2" [disabled]="redondo ? true : null">
                 <!--mat-hint>MM/DD/YYYY</mat-hint-->
                 <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
                 <mat-datepicker touchUi #picker2></mat-datepicker>
@@ -52,7 +52,7 @@
           <div class="row m-0">
             <div class="col-md-2 d-flex align-items-center">
               <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <input (click)="toggleCollapse(1)" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
                 <label class="form-check-label text-white" for="flexSwitchCheckChecked">Redondo</label>
               </div>  
             </div>
@@ -134,5 +134,4 @@
           </div>
         </div>
       </div>
-</div>
     

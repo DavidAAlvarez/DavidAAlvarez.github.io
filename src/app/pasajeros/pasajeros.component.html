@@ -1,7 +1,7 @@
 <div class="container-fluid p-4">
-    
-    <div class="row">
-        <div class="col-md-8 m-0">
+    <div class="row m-0">
+        <div class="col-md-12 m-0">
+            <br>
             <div class="row m-0 mb-4 d-flex justify-content-around text-center">
                 <div class="col-md-2"><i class="fa-solid fa-city"></i> Rutas</div>
                 <div class="col-md-2"><i class="fa-solid fa-person"></i> Pasajero</div>
@@ -12,10 +12,15 @@
 
             <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
 
-            <div class="row m-0 mt-4">
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-8 m-0 p-0">
+
+            <div class="row m-0">
                 <div class="col-md-3">
-                    <div class="card border-primary p-0">
-                        <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title"></h5></div>
+                    <div class="card border-{{colorapp}} p-0">
+                        <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title"></h5></div>
                         <div class="card-body">
                             <div class="col-12 d-flex justify-content-around">
                                 <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
@@ -30,8 +35,8 @@
                     </div>
                 </div>
                 <div [visible]="visible1" cCollapse class="col-md-9">
-                    <div class="card border-primary p-0">
-                        <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
+                    <div class="card border-{{colorapp}} p-0">
+                        <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
                         <div class="card-body">
                             <div class="input-group border mb-2">
                                 <span class="input-group-text">Nombre y Apellidos</span>
@@ -51,8 +56,8 @@
             </div>
             <div class="row m-0 mt-4">
                 <div class="col-md-3">
-                    <div class="card border-primary p-0">
-                        <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title"></h5></div>
+                    <div class="card border-{{colorapp}} p-0">
+                        <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title"></h5></div>
                         <div class="card-body">
                             <div class="col-12 d-flex justify-content-around">
                                 <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
@@ -67,8 +72,8 @@
                     </div>
                 </div>
                 <div [visible]="visible2" cCollapse class="col-md-9">
-                        <div class="card border-primary p-0">
-                            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
+                        <div class="card border-{{colorapp}} p-0">
+                            <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
                             <div class="card-body">
                                 <div class="input-group border mb-2">
                                     <span class="input-group-text">Nombre y Apellidos</span>
@@ -88,8 +93,8 @@
             </div>
             <div [visible]="visiblea" cCollapse  class="row m-0 mt-4">
                 <div class="col-md-3">
-                    <div class="card border-primary p-0">
-                        <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title"></h5></div>
+                    <div class="card border-{{colorapp}} p-0">
+                        <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title"></h5></div>
                         <div class="card-body">
                             <div class="col-12 d-flex justify-content-around">
                                 <img width="60" alt="Angular Logo" src="/assets/images/logo_aexa.svg"/> <h5 class="card-title">Aexa Light</h5>
@@ -104,8 +109,8 @@
                     </div>
                 </div>
                 <div [visible]="visible3" cCollapse class="col-md-9">
-                        <div class="card border-primary p-0">
-                            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
+                        <div class="card border-{{colorapp}} p-0">
+                            <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title m-0">Datos</h5></div>
                             <div class="card-body">
                                 <div class="input-group border mb-2">
                                     <span class="input-group-text">Nombre y Apellidos</span>
@@ -125,8 +130,8 @@
             </div>
             <div class="row m-0 mt-4">
                 <div class="col-md-3">
-                    <div class="card border-primary p-0">
-                        <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title"></h5></div>
+                    <div class="card border-{{colorapp}} p-0">
+                        <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title"></h5></div>
                         <div class="card-body">
                             <div class="col-12 text-center">
                                 <h5 class="card-title">Agregar Pasajero</h5> <i class="fa-solid fa-user-plus"></i>
@@ -151,8 +156,8 @@
             </div>
         </div>
         <div class="col-md-4 m-0">
-            <div class="card border-primary mb-3">
-            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title">Informacion</h5></div>
+            <div class="card border-{{colorapp}} mb-3">
+            <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}"><h5 class="card-title">Informacion</h5></div>
             <div class="card-body text-dark">
                 <h5 class="card-title">Viaje</h5>
                 <p class="card-text">TUX - TAP <br> 17:00 - 05:00 <br> Jueves 27 Julio 2023</p>
@@ -166,7 +171,7 @@
                 <h5 class="card-title">Terminos y condiciones</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
-            <div class="card-footer bg-transparent border-primary">
+            <div class="card-footer bg-transparent border-{{colorapp}}">
                 <h5 class="card-title">Total</h5>
                 <p class="card-text"></p>
             </div>

@@ -10,12 +10,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./venta-boletos.component.css'],
 })
 export class VentaBoletosComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   colorapp = AppComponent.colorapp;
+  redondo = false;
   panelColor = new FormControl('red');
 
-  constructor(private router: Router) { }
- 
-  public ngOnInit(): void {
-     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
- }
+  toggleCollapse(num: any): void {
+    if (num == 1){
+    this.redondo = !this.redondo;
+    }
+  }
+
 }

@@ -1,18 +1,25 @@
 <div class="container-fluid p-4">
     
-    <div class="row">
-        <div class="col-md-8 m-0">
-            <div class="row m-0 mb-4 d-flex justify-content-around text-center">
+    <div class="row m-0">
+        <div class="col-md-12 m-0">
+            <br>
+            <div class="row m-0 mb-4 d-flex justify-content-between text-center">
                 <div class="col-md-2"><i class="fa-solid fa-city"></i> Rutas</div>
                 <div class="col-md-2"><i class="fa-solid fa-person"></i> Pasajero</div>
                 <div class="col-md-2"><i class="fa-solid fa-person-seat"></i> Asientos</div>
                 <div class="col-md-2"><i class="fa-solid fa-ticket"></i> Pago</div>
                 <div class="col-md-3"><i class="fa-solid fa-shield-check"></i> Confirmacion</div>
             </div>
-                <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+
+            <mat-progress-bar mode="determinate" value="10"></mat-progress-bar>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 m-0">
             <div class="row m-0 mt-4">
-                <div class="card border-primary p-0">
-                    <div class="card-header text-white border-primary app-{{colorapp}}">
+                <div class="card border-{{colorapp}} p-0">
+                    <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}">
                         <!--h5 class="card-header text-white p-0">
                             Tuxtla <i class="fa-solid fa-route fa-2x"></i> Tapachula
                         </h5-->
@@ -49,8 +56,8 @@
                 </div>
             </div>
             <div class="row m-0 mt-4">
-                <div class="card border-primary p-0">
-                    <div class="card-header text-white border-primary app-{{colorapp}}">
+                <div class="card border-{{colorapp}} p-0">
+                    <div class="card-header text-white border-{{colorapp}} app-{{colorapp}}">
                         <!--h5 class="card-header text-white p-0">
                             Tuxtla <i class="fa-solid fa-route fa-2x"></i> Tapachula
                         </h5-->
@@ -87,25 +94,6 @@
                     </div> 
                 </div>
             </div>
-        </div>
-        <div class="col-md-4 m-0">
-            <div class="card border-primary mb-3">
-            <div class="card-header text-white border-primary app-{{colorapp}}"><h5 class="card-title">Informacion</h5></div>
-            <div class="card-body text-dark">
-                <h5 class="card-title">Viaje</h5>
-                <p class="card-text">Ruta <br> TUX - TAP <br> Jueves 27 Julio 2023</p>
-                <h5 class="card-title">Pasajeros</h5>
-                <h5 class="card-title">Costo</h5>
-                <h5 class="card-title">Servicio Extra</h5>
-                
-                <h5 class="card-title">Terminos y condiciones</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <div class="card-footer bg-transparent border-primary">
-                <h5 class="card-title">Total</h5>
-                <p class="card-text">$400.00</p>
-            </div>
-        </div>
         </div>
     </div>
 </div>
